@@ -87,37 +87,74 @@
       </nav>
     </menu>
     <h2>Educación</h2>
-         <table border="1", cellpadding="10", cellspacing="0" >
-           <thead>
-             <tr>
+    <table border="1", cellpadding="10", cellspacing="0" >
+      <thead>
+           <tr>
                <th>Año</th>
                <th>Institución</th>
                <th>Lugar</th>
                <th>¿Culminó?</th>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
+           </tr>
+      </thead>
+      <tbody>
+           <tr>
                <td>2010</td>
                <td>Universidad Tecnológica de Chile</td>
                <td>Arica</td>
                <td>Si</td>
-             </tr>
-             <tr>
+           </tr>
+           <tr>
                <td>2016</td>
                <td>Instituto Profesional Santo Tomas</td>
                <td>Santiago</td>
                <td>Si</td>
-             </tr>
-             <tr>
+           </tr>
+           <tr>
                <td>2017</td>
                <td>Instituto Profesional Santo Tomas</td>
                <td>Iquique</td>
                <td>Si</td>
-             </tr>
-           </tbody>
-         </table>
-
+           </tr>
+      </tbody>
+    </table>
+    <form>
+       <h2>Agregar Estudios</h2>
+       <p>
+         <label for="año">Año por :</label>
+         <select name="año">
+             <option value="09">2009</option>
+             <option value="10">2010</option>
+             <option value="11">2011</option>
+             <option value="12">2012</option>
+             <option value="13">2013</option>
+             <option value="14">2014</option>
+             <option value="15">2015</option>
+             <option value="16">2016</option>
+             <option value="17">2017</option>
+             <option value="18">2018</option>
+             <option value="19">2019</option>
+             <option value="20">2020</option>
+         </select>
+       </p>
+       <p>
+         <label for="institucion">Institución :</label>
+         <input type="text" placeholder="Universidad.." name="institucion" required>
+       </p>
+       <p>
+         <label for="lugar">Lugar :</label>
+         <textarea name="lugar" rows="2" cols="30"></textarea>
+       </p>
+       <p>
+         <label for="culmino">¿Culmino? :</label>
+         <select name="culmino">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+         </select>
+       </p>
+       <p>
+         <input type="submit" value="Enviar">
+       </p>
+    </form>
     <footer>
         <h3>Contacto</h3>
         <p>Correo: boris.cabrera.f@gmail.com</p>
